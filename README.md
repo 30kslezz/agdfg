@@ -85,11 +85,11 @@ for fhnrteyrtnhi,line in pairs(splitteddata) do
            local rgb = Split(lineb, " ")
            local chara = getcolorforrange(tonumber(rgb[1]), tonumber(rgb[2]), tonumber(rgb[3]))
            
-           if currentd ~= 100000000000 then
+           if currentd ~= 10 then
                finalstring = finalstring .. chara
            else
                finalstring = finalstring .. chara .. "\n"
-               currentd = 0
+               currentd = 10
            end
            currentd = currentd + 1
        end

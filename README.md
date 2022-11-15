@@ -1,6 +1,6 @@
 _G.Enabled = true
 --local data = readfile("nframes/owl.txt")
-local data = game:HttpGet("https://raw.githubusercontent.com/30kslezz/idk/main/LICENSE.md") -- prerendered amongus video
+local data = game:HttpGet("https://raw.githubusercontent.com/30kslezz/what/main/LICENSE.md") -- prerendered amongus video
 
 function update(text)
     local args = {

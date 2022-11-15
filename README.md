@@ -54,7 +54,7 @@ local colours = {
 }
 
 function getcolorforrange(r, g, b)
-    local closestint = 100000
+    local closestint = 5000000000
     local closestcolour = ""
     
     for i, colour in pairs(colours) do
@@ -89,7 +89,7 @@ for fhnrteyrtnhi,line in pairs(splitteddata) do
                finalstring = finalstring .. chara
            else
                finalstring = finalstring .. chara .. "\n"
-               currentd = 10
+               currentd = 0
            end
            currentd = currentd + 1
        end

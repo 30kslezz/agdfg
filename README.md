@@ -85,7 +85,7 @@ for fhnrteyrtnhi,line in pairs(splitteddata) do
            local rgb = Split(lineb, " ")
            local chara = getcolorforrange(tonumber(rgb[1]), tonumber(rgb[2]), tonumber(rgb[3]))
            
-           if currentd ~= 50 then
+           if currentd ~= 100000000000 then
                finalstring = finalstring .. chara
            else
                finalstring = finalstring .. chara .. "\n"
@@ -94,6 +94,6 @@ for fhnrteyrtnhi,line in pairs(splitteddata) do
            currentd = currentd + 1
        end
        coroutine.wrap(update)(finalstring)
-       task.wait(.99)
+       task.wait(.03)
    end
 end
